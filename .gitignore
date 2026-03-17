@@ -1,0 +1,80 @@
+# Общие исключения для Python-проекта
+
+# Виртуальные окружения (во всех подпапках)
+**/.venv/
+**/venv/
+**/env/
+.venv/
+venv/
+env/
+
+# Кэш и скомпилированные файлы Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Логи и базы данных
+*.log
+*.sqlite3
+*.db
+
+# Каталоги с большими данными/временныe артефакты/результаты обучения
+catboost_info/
+catboost_training/
+learn/
+tmp/
+data/
+data_raw/
+outputs/
+results/
+
+# Модели и бинарные артефакты
+# Оставляем каталоги моделей под контролем, но игнорируем большие бинарные файлы.
+# Примеры форматов: CatBoost, PyTorch, TensorFlow и пр.
+*.cbm
+*.cbm.gz
+*.model
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.h5
+*.onnx
+
+# Папки с сырыми/временными артефактами моделей
+models/tmp/
+models/*.tmp
+
+# OS
+.DS_Store
+
+# Дополнительные распространённые исключения
+.env
+.python-version
+build/
+dist/
+*.egg-info/
+__pypackages__/
+*.pkl
+*.h5
+
+# Windows Thumbs
+Thumbs.db
+
+# Тесты, кэши
+.pytest_cache/
+.cache/
+pip-wheel-metadata/
+htmlcov/
+.coverage
